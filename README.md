@@ -45,6 +45,8 @@ There are multiple scenarios that can be configured in the ```pathsToProcess``` 
 (Note: For Windows, path should be configured with 4 backslashes as separator - ```C:\\\\src\\\\test\\\\resources\\\\TestFiles```.
 For Windows Network paths, you can configure path like - ```\\\\\\\\1.2.3.4\\\\abc\\\\def\\\\ProductI```)
 
+(Note: The Java [glob syntax](https://docs.oracle.com/javase/8/docs/api/java/nio/file/FileSystem.html#getPathMatcher-java.lang.String-) is used.)
+
 ##### 2.2.1 Monitoring a specific directory
 ```path: "src/test/resources/TestFiles"```
 Directory metrics for 'TestFiles' will be generated. Please ensure that the directory does not end with a slash for this scenario. 
